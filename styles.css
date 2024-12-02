@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+main {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#links-profile-container {
+  /* margin: 80px auto; */
+  width: 384px;
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.avatar-img img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin-top: 32px;
+}
+.profile-text {
+  text-align: center;
+}
+.profile-text h1 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 21px;
+}
+.profile-text h4 {
+  color: #c5f82a;
+  font-size: 14px;
+  margin-top: 21px;
+}
+.profile-text p {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 21px;
+}
+.profile-links-container {
+  margin-top: 21px;
+}
+.links-menu li {
+  list-style-type: none;
+  width: 340px;
+  height: 45px;
+  text-align: center;
+  margin: 16px 0px;
+}
+.links-menu li a {
+  background-color: #333333;
+  text-decoration: none;
+  color: white;
+  width: 340px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.2s ease-in;
+  font-weight: 700;
+}
+.links-menu li a:hover {
+  background-color: #c5f82a;
+  color: #030202;
+}
+@media screen and (max-width: 500px) {
+  #links-profile-container {
+    margin: 80px auto;
+    width: 90%;
+    height: 620px;
+  }
+  .links-menu li a {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .links-menu li {
+    width: 260px;
+  }
+  .links-menu li a {
+    width: 90%;
+    font-size: 12px;
+  }
+}
